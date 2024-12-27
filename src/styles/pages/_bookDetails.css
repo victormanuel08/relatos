@@ -1,0 +1,58 @@
+.book-details {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.book-details__content {
+  display: flex;
+  align-items: center;
+}
+
+.book-details__image {
+  width: 200px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.book-details__info {
+  flex-grow: 1;
+}
+
+.book-details__buttons {
+  display: flex;
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+.book-details__buttons .btn {
+  padding: 12px 24px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.book-details__buttons .btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-add-to-cart {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #388e3c;
+}
+
+.btn-back {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn-back:hover {
+  background-color: #f57c00;
+}

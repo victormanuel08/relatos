@@ -1,0 +1,10 @@
+.main-page {
+  padding: 20px;
+}
+  
+.main-page__books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+  
