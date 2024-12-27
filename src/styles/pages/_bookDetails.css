@@ -6,6 +6,7 @@
 .book-details__content {
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
 }
 
 .book-details__image {
@@ -55,4 +56,29 @@
 
 .btn-back:hover {
   background-color: #f57c00;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .book-details__content {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .book-details__image {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-bottom: 20px; /* Añade un margen inferior para separación */
+  }
+
+  .book-details__buttons {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    width: 100%; /* Asegura que los botones ocupen todo el ancho */
+  }
+
+  .book-details__buttons .btn {
+    width: 100%; /* Asegura que los botones ocupen todo el ancho */
+    margin-bottom: 10px; /* Añade un margen inferior para separación */
+  }
 }

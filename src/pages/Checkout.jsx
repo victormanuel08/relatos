@@ -31,7 +31,11 @@ const Checkout = ({ cart, removeFromCart, clearCart }) => {
         </ul>
       )}
       {cart.length > 0 && (
-        <button onClick={handlePay} className="btn btn-pay">Pagar</button>
+        <div>
+          <button onClick={handlePay} className="btn btn-pay">Pagar</button>
+          <button onClick={clearCart} className="btn btn-clear">Vaciar carrito</button>
+          <button onClick={() => navigate('/books')} className="btn btn-back">Volver</button>
+        </div>
       )}
     </div>
   );

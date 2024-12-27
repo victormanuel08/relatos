@@ -6,6 +6,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
 }
 
 .header__logo h1 {
@@ -92,4 +93,28 @@ header {
 
 .cart-button i {
   margin-right: 5px;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .header__nav {
+    width: 100%; /* Asegura que la navegación ocupe todo el ancho */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    margin-top: 10px; /* Añade un margen superior para separación */
+  }
+
+  .header__search,
+  .cart-button {
+    width: 100%; /* Asegura que la barra de búsqueda y el botón del carrito ocupen todo el ancho */
+    margin-bottom: 10px; /* Añade un margen inferior para separación */
+  }
+
+  .cart-button {
+    justify-content: center; /* Centra el contenido del botón */
+  }
 }
