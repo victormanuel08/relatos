@@ -4,11 +4,11 @@ import BookCard from '../components/BookCard';
 import mockData from '../mockData';
 import '../styles/pages/_mainPage.css';
 
-const MainPage = ({ searchQuery, addToCart }) => {
+const MainPage = ({ searchQuery = '', addToCart }) => {
   const navigate = useNavigate();
 
   const filteredBooks = mockData.filter((book) =>
-    book.title.toLowerCase().includes(searchQuery.toLowerCase()) 
+    book.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
